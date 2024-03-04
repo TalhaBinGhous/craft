@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h2>Datatypes</h2>
+<p id="d"></p>
+<p id="do"></p>
+<script>
+const person = {
+  firstName : "Talha &nbsp",
+  MiddleName  : "Bin &nbsp",
+  lastName  : "Ghous",
+  age     : 24,
+  eyeColor  : "blue <br>",  
+  cars : ["Saab","Volvo","BMW"]
+};
+document.getElementById("d").innerHTML =
+person.firstName +  person.MiddleName + person.lastName+  " is " + person.age + " years old. <br>" 
+ +  "And his eye color is &nbsp " + person.eyeColor + person.cars[1];
+
+ let x = 5;
+let y = 5;
+let z = 6;
+
+document.getElementById("do").innerHTML =
+(x == y) + "<br>" + (x == z);
+
+</script>
+</body>
+</html>
